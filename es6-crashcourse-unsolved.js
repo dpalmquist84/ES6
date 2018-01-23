@@ -12,7 +12,7 @@ const profession = "playing soccer"
 
 // DO: convert the string in this console.log() to a template literal
 console.log(firstName + " " + lastName + " is " + age + " and is good at " + profession + ".");
-console.log(`${firstName} ${lastName} is ${age} and is good at ${profession}.`)
+
 
 
 
@@ -25,30 +25,14 @@ console.log(`${firstName} ${lastName} is ${age} and is good at ${profession}.`)
 
 // DO: List the four new array methods with a description of what they are used for. 
 // (Bonus: include array method callbacks and parameters)
-//Array.forEach()
-//Array.map()
-//Array.filter()
-//Array.reduce()
+
 
 
 
 
 // 3. Using New Array Methods.
 
-const myArray = [4, 6, 2, 3, 8, 9];
 
-myArray.forEach(function(element) {
-    console.log(element)
-});
-
-let map = myArray.map(x => x * 2)
-   console.log(map)
-
-let filter = myArray.filter(number => number > 7)
-    console.log(filter)
-
-let reduce = myArray.reduce((prev, curr) => prev + curr);
-    console.log(reduce)
 
 // DO: 
 // (Note: we will turn these into arrow functions later, so don't feel like you have to do that now.)
@@ -56,12 +40,10 @@ let reduce = myArray.reduce((prev, curr) => prev + curr);
 // a. Use the forEach method to console.log each element in the array.
 
 // b. Use the filter method to make a new array that has only even numbers.
-let filtered = myArray.filter(number => number % 2 == 0);
-    console.log(filtered)
+
 
 // c. Use the map method to make a new array that has string versions of the numbers. (I.e. the number 4 will be the string "4" and so on.)
-let stringed = myArray.map(string => string.toString);
-    console.log(stringed)
+
 // d. Use the reduce method to get the product of all the numbers.
 
 
@@ -76,34 +58,14 @@ let stringed = myArray.map(string => string.toString);
 
 // DO: Rewrite the following functions as arrow functions
 // a. 
-    var biggerNumber = function(num1, num2) {
-        if (num1 > num2) {
-            return num1;
-        } else if (num1 < num2) {
-            return num2;
-        } else {
-            return "They are the same";
-        }
-    }
-    
-    const bigNumber = (num1, num2) => {
-        if (num1 > num2) {
-            return num1;
-        } else if ( num1 < num2) {
-            return num2
-        } else {
-            return "they are the same"
-        }
-    }
-    bigNumber(1 , 5)
+ 
+
 // b. 
     var giveMessageTo = function(name, message) {
         console.log("Hi " + name + "! " + message)
     } 
     // (Don't forget to use template literals!)
-    const messaged = (name, message) => console.log(`Hi ${name}! ${message}`)
-    messaged("david", "you're awesome");
-    console.log(messaged);
+    ;
     
 // c. 
     var sayHiTo = function(name) {
@@ -115,8 +77,7 @@ let stringed = myArray.map(string => string.toString);
         return number / 2;
     }
 
-    const divideByTwo = number => number / 2;
-    divideByTwo(10);
+    
 
 
 
@@ -126,14 +87,14 @@ let stringed = myArray.map(string => string.toString);
 // DO:
 // a. Write an arrow function that takes two parameters, concatenates them, and returns this concatenated result. 
 // (For this exercise, include the return statement in the arrow function. You can assume the parameters will be strings - no need to convert.)
-const combined = (word1, word2) => console.log(`${word1}${word2}`);
+
 // b. Write an arrow function that takes two parameters (assume numbers) and returns their product.
 // (For this exercise, write the function such that the "return" is implied. You can assume the parameters will be numbers - no need to convert.)
-const product = (num1, num2) => num1 * num2;
+
 
 // c. Write an arrow function that takes only one parameter and returns the result of that parameter plus itself.
 // (For this exercise, write the function as concisely as possible.)
-const addMyself = num3 => num3 + num3;
+
 
 // d. Write an arrow function that takes zero parameters and console logs "Hello World".
 // (For this exercise, write the function as concisely as possible.)
